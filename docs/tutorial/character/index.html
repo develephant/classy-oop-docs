@@ -1,0 +1,1076 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://develephant.github.io/classy-plugin/tutorial/character/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+    
+    
+      
+        <title>Characters - Classy OOP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" >
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#character-classes" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://develephant.github.io/classy-plugin/" title="Classy OOP" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/rnd-dev.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Classy OOP
+              </span>
+              <span class="md-header-nav__topic">
+                Characters
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../img/rnd-dev.png" width="24" height="24">
+      
+    </span>
+    Classy OOP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../classy/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Usage
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Usage
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/class/" title="Classes" class="md-nav__link">
+      Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/subclass/" title="Subclasses" class="md-nav__link">
+      Subclasses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/instance/" title="Instances" class="md-nav__link">
+      Instances
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Characters
+      </label>
+    
+    <a href="./" title="Characters" class="md-nav__link md-nav__link--active">
+      Characters
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-attributes" title="Class Attributes" class="md-nav__link">
+    Class Attributes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-character" title="Base Character" class="md-nav__link">
+    Base Character
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warrior" title="Warrior" class="md-nav__link">
+    Warrior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boss-warrior" title="Boss (Warrior)" class="md-nav__link">
+    Boss (Warrior)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mage" title="Mage" class="md-nav__link">
+    Mage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_1" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classessubclasses" title="Classes/Subclasses" class="md-nav__link">
+    Classes/Subclasses
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#character" title="Character" class="md-nav__link">
+    Character
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warrior_1" title="Warrior" class="md-nav__link">
+    Warrior
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes_1" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mage_1" title="Mage" class="md-nav__link">
+    Mage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes_2" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../weapon/" title="Weapons" class="md-nav__link">
+      Weapons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../discussion/" title="Discussion" class="md-nav__link">
+      Discussion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../battle/" title="Mock Battle" class="md-nav__link">
+      Mock Battle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../demo/" title="Demo" class="md-nav__link">
+      Demo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-attributes" title="Class Attributes" class="md-nav__link">
+    Class Attributes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-character" title="Base Character" class="md-nav__link">
+    Base Character
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warrior" title="Warrior" class="md-nav__link">
+    Warrior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boss-warrior" title="Boss (Warrior)" class="md-nav__link">
+    Boss (Warrior)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mage" title="Mage" class="md-nav__link">
+    Mage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_1" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classessubclasses" title="Classes/Subclasses" class="md-nav__link">
+    Classes/Subclasses
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#character" title="Character" class="md-nav__link">
+    Character
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warrior_1" title="Warrior" class="md-nav__link">
+    Warrior
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes_1" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mage_1" title="Mage" class="md-nav__link">
+    Mage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes_2" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="character-classes">Character Classes</h1>
+<p>The first thing we need to do is determine what our various Character class attributes will be, Then we can then start building out the classes.</p>
+<h2 id="class-attributes">Class Attributes</h2>
+<h3 id="base-character">Base Character</h3>
+<h4 id="properties">Properties</h4>
+<p>To keep things simple for this tutorial, we will just work with a few properties.</p>
+<div class="codehilite"><pre><span></span>Character
+  .name
+  .isType
+  .health
+  .maxHealth
+  .weapon
+</pre></div>
+
+
+<h4 id="methods">Methods</h4>
+<p>Now let's collect the methods we will be needing for the class.</p>
+<div class="codehilite"><pre><span></span>Character
+  :hit
+  :heal
+  :attack
+  :getName
+  :getType
+  :setHealth
+  :getHealth
+  :getMaxHealth
+  :getWeapon
+  :setWeapon
+  :isDead
+</pre></div>
+
+
+<h3 id="warrior">Warrior</h3>
+<p>The Warrior will be a subclass of the base Character class, but will not need any additional properties or methods.</p>
+<h3 id="boss-warrior">Boss (Warrior)</h3>
+<p>The Boss will be a direct instance of the Warrior subclass, which will be demonstrated in the <a href="../../tutorial/battle/">Mock Battle</a> code.</p>
+<h3 id="mage">Mage</h3>
+<p>The Mage will be a subclass of the Character class, and will need a few additional properties and methods. Since the Mage is a subclass of the Character class, the following properties and methods are <em>in addition</em> to the properties and methods already on the Character class.</p>
+<h4 id="properties_1">Properties</h4>
+<div class="codehilite"><pre><span></span>Mage
+  .mana
+  .maxMana
+</pre></div>
+
+
+<h4 id="methods_1">Methods</h4>
+<div class="codehilite"><pre><span></span>Mage
+  :setMana
+  :getMana
+  :getMaxMana
+  :useMana
+  :hasMana
+  :refillMana
+</pre></div>
+
+
+<h2 id="classessubclasses">Classes/Subclasses</h2>
+<h3 id="character">Character</h3>
+<p>The base Character class.</p>
+<p><em>classes/Character.lua</em></p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Character</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Character&quot;</span><span class="p">)</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">isType</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">maxHealth</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">isType</span> <span class="o">=</span> <span class="n">isType</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">health</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">maxHealth</span> <span class="o">=</span> <span class="n">maxHealth</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">weapon</span> <span class="o">=</span> <span class="n">weapon</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">hit</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getHealth</span><span class="p">()</span> <span class="o">-</span> <span class="n">amount</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">setHealth</span><span class="p">(</span><span class="nb">math.max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">amount</span><span class="p">))</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">heal</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getHealth</span><span class="p">()</span> <span class="o">+</span> <span class="n">amount</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">setHealth</span><span class="p">(</span><span class="nb">math.min</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">self</span><span class="p">:</span><span class="n">getMaxHealth</span><span class="p">()))</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">attack</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="n">character</span><span class="p">:</span><span class="n">hit</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">getType</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">isType</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">setHealth</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">amount</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">getHealth</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">health</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">getMaxHealth</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">maxHealth</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">getWeapon</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">weapon</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">setWeapon</span><span class="p">(</span><span class="n">weapon</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">weapon</span> <span class="o">=</span> <span class="n">weapon</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">isDead</span><span class="p">()</span>
+  <span class="kr">if</span> <span class="n">self</span><span class="p">:</span><span class="n">getHealth</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="kr">then</span>
+    <span class="kr">return</span> <span class="kc">true</span>
+  <span class="kr">end</span>
+  <span class="kr">return</span> <span class="kc">false</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">Character</span>
+</pre></div>
+
+
+<h4 id="notes">Notes</h4>
+<ul>
+<li>
+<p>This is the base class for the subclasses, and is the only time we need to use the <code>Classy.create</code> method for our character class needs.</p>
+</li>
+<li>
+<p>All sublassess of the Character class will inherit the methods and properties in the class. So this is where we put the most common functionality that can be shared among the subclasses.</p>
+</li>
+</ul>
+<hr />
+<h3 id="warrior_1">Warrior</h3>
+<p>The Warrior subclass. We will also create the Boss instance from this subclass.</p>
+<p><em>classes/Warrior.lua</em></p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Character</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Character&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Warrior</span> <span class="o">=</span> <span class="n">Character</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Warrior&quot;</span><span class="p">)</span>
+
+<span class="kr">function</span> <span class="nc">Warrior</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">isType</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">maxHealth</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+  <span class="n">Warrior</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">isType</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">maxHealth</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">Warrior</span>
+</pre></div>
+
+
+<h4 id="notes_1">Notes</h4>
+<ul>
+<li>
+<p>The Warrior is a subclass of the Character class. We need to pull in the Character class by using <code>require</code> so that we can "extend" it.</p>
+</li>
+<li>
+<p>To create the Warrior class we use the <code>extends</code> method on the Character class, not <code>Classy.create</code>.</p>
+</li>
+<li>
+<p>We need to pass in the same arguments that the base Character class is expecting in the <code>constructor</code> function. We use the <code>super</code> property to pass those values up the hierarchy. </p>
+</li>
+<li>
+<p>The Warrior subclass uses all of the original methods and properties of the base Character class. We could just create a direct instance from the Character class, but by creating a subclass of the Warior type we can add specialized functionality in the future to the Warrior class very easily.</p>
+</li>
+</ul>
+<hr />
+<h3 id="mage_1">Mage</h3>
+<p>The Mage subclass.</p>
+<p><em>classes/Mage.lua</em></p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Character</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Character&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Mage</span> <span class="o">=</span> <span class="n">Character</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Mage&quot;</span><span class="p">)</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">isType</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">maxHealth</span><span class="p">,</span> <span class="n">weapon</span><span class="p">,</span> <span class="n">mana</span><span class="p">,</span> <span class="n">maxMana</span><span class="p">)</span>
+  <span class="n">Mage</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">isType</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">maxHealth</span><span class="p">,</span> <span class="n">weapon</span><span class="p">)</span>
+
+  <span class="n">self</span><span class="p">.</span><span class="n">mana</span> <span class="o">=</span> <span class="n">mana</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">maxMana</span> <span class="o">=</span> <span class="n">maxMana</span>
+<span class="kr">end</span>
+
+<span class="c1">--override parent method</span>
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">attack</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">self</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">():</span><span class="n">hasCharges</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">():</span><span class="n">useCharges</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">setMana</span><span class="p">(</span><span class="nb">math.max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">self</span><span class="p">:</span><span class="n">getMana</span><span class="p">()</span> <span class="o">-</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="c1">--Call parent attack method</span>
+    <span class="n">Mage</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">attack</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">character</span><span class="p">)</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">setMana</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">mana</span> <span class="o">=</span> <span class="n">amount</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">getMana</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">mana</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">getMaxMana</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">maxMana</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">useMana</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getMana</span><span class="p">()</span> <span class="o">-</span> <span class="n">amount</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">setMana</span><span class="p">(</span><span class="nb">math.max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">amount</span><span class="p">))</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">hasMana</span><span class="p">()</span>
+  <span class="kr">if</span> <span class="n">self</span><span class="p">:</span><span class="n">getMana</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="kr">then</span>
+    <span class="kr">return</span> <span class="kc">true</span>
+  <span class="kr">end</span>
+  <span class="kr">return</span> <span class="kc">false</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">refillMana</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">amount</span> <span class="ow">or</span> <span class="n">self</span><span class="p">:</span><span class="n">getMaxMana</span><span class="p">()</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getMana</span><span class="p">()</span> <span class="o">+</span> <span class="n">amount</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">setMana</span><span class="p">(</span><span class="nb">math.min</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">self</span><span class="p">:</span><span class="n">getMaxMana</span><span class="p">()))</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">Mage</span>
+</pre></div>
+
+
+<h4 id="notes_2">Notes</h4>
+<ul>
+<li>
+<p>The Mage is a subclass of the Character class. We need to pull in the Character class by using <code>require</code> so that we can "extend" it.</p>
+</li>
+<li>
+<p>To create the Mage class we use the <code>extends</code> method on the Character class, not <code>Classy.create</code>.</p>
+</li>
+<li>
+<p>The Mage class has a number of customized methods and properties added to it. These will be available <em>in addition</em> to what is in the base Character class.</p>
+</li>
+<li>
+<p>The Mage subclass takes some additional arguments to its <code>constructor</code> function, that are specific to the subclass(<code>mana</code> and <code>maxMana</code>). We still need to pass the arguments that the base Character class is expecting in the <code>constructor</code> function. We use the <code>super</code> property to pass those values up the hierarchy, but only including the ones needed by the base Character class. </p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../weapon/" title="Weapons" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Weapons
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy;2018 C. Byerley (develephant) | <i class="fas fa-flask fa-sm"></i> v1.0.0
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+      <a href="https://forums.coronalabs.com/forum/654-corona-community-plugins/" class="md-footer-social__link"><i class="far fa-life-ring"></i></a>
+    
+      <a href="https://twitter.com/develephant" class="md-footer-social__link"><i class="fab fa-twitter"></i></a>
+    
+      <a href="https://develephant.com" class="md-footer-social__link"><i class="fas fa-globe"></i></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.62cfdabc.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

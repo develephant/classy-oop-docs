@@ -1,0 +1,1082 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://develephant.github.io/classy-plugin/tutorial/battle/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+    
+    
+      
+        <title>Mock Battle - Classy OOP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" >
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#code-setup" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://develephant.github.io/classy-plugin/" title="Classy OOP" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/rnd-dev.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Classy OOP
+              </span>
+              <span class="md-header-nav__topic">
+                Mock Battle
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../img/rnd-dev.png" width="24" height="24">
+      
+    </span>
+    Classy OOP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../classy/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Usage
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Usage
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/class/" title="Classes" class="md-nav__link">
+      Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/subclass/" title="Subclasses" class="md-nav__link">
+      Subclasses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usage/instance/" title="Instances" class="md-nav__link">
+      Instances
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../character/" title="Characters" class="md-nav__link">
+      Characters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../weapon/" title="Weapons" class="md-nav__link">
+      Weapons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../discussion/" title="Discussion" class="md-nav__link">
+      Discussion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Mock Battle
+      </label>
+    
+    <a href="./" title="Mock Battle" class="md-nav__link md-nav__link--active">
+      Mock Battle
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-setup" title="Code Setup" class="md-nav__link">
+    Code Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" title="Classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#characters" title="Characters" class="md-nav__link">
+    Characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weapons" title="Weapons" class="md-nav__link">
+    Weapons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instances" title="Instances" class="md-nav__link">
+    Instances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weapons_1" title="Weapons" class="md-nav__link">
+    Weapons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#characters_1" title="Characters" class="md-nav__link">
+    Characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-methods" title="Output Methods" class="md-nav__link">
+    Output Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battle-methods" title="Battle Methods" class="md-nav__link">
+    Battle Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attack" title="attack" class="md-nav__link">
+    attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heal" title="heal" class="md-nav__link">
+    heal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-battle-code" title="The "Battle Code" class="md-nav__link">
+    The "Battle Code
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../demo/" title="Demo" class="md-nav__link">
+      Demo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-setup" title="Code Setup" class="md-nav__link">
+    Code Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" title="Classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#characters" title="Characters" class="md-nav__link">
+    Characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weapons" title="Weapons" class="md-nav__link">
+    Weapons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instances" title="Instances" class="md-nav__link">
+    Instances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weapons_1" title="Weapons" class="md-nav__link">
+    Weapons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#characters_1" title="Characters" class="md-nav__link">
+    Characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-methods" title="Output Methods" class="md-nav__link">
+    Output Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battle-methods" title="Battle Methods" class="md-nav__link">
+    Battle Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attack" title="attack" class="md-nav__link">
+    attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heal" title="heal" class="md-nav__link">
+    heal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-battle-code" title="The "Battle Code" class="md-nav__link">
+    The "Battle Code
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Mock Battle</h1>
+                
+                <p>So now that we have all of our classes and subclasses set up we should take a look at using them. We'll do this through code, and observe the output in the Corona console.</p>
+<p>If you want to follow along, you can <a href="https://s3.amazonaws.com/develephant-plugins/classy/classy-demo.zip">download the demo project</a> which contains the "battle" code as well as all the classes in a Corona project.</p>
+<p>Here I'm just going to point out some important parts of the code. You can view the full code further below.</p>
+<h2 id="code-setup">Code Setup</h2>
+<p>At the start of the file we localize a few <code>string</code> methods for output. You might notice we don't need to <code>require</code> the <strong>Classy OOP</strong> plugin here. As a matter of fact we've only needed the plugin in a couple of the code class pages.</p>
+<h2 id="classes">Classes</h2>
+<h3 id="characters">Characters</h3>
+<p>Now we bring in the <a href="../../tutorial/character/#character">Character</a> classes that we created:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kd">local</span> <span class="n">Mage</span>    <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Mage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Warrior</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Warrior&quot;</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>You should notice that we don't need to bring in the base <strong>Character</strong> class file. We only need the subclasses, as they already have references to the base <strong>Character</strong> class.</p>
+<h3 id="weapons">Weapons</h3>
+<p>We follow up with the <a href="../../tutorial/weapon/#weapon">Weapon</a> classes:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kd">local</span> <span class="n">Wand</span>    <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Wand&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Melee</span>   <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Melee&quot;</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>Again, we don't need the base <strong>Weapon</strong> class file. We only need the subclasses.</p>
+<h2 id="instances">Instances</h2>
+<h3 id="weapons_1">Weapons</h3>
+<p>Now let's create our weapon instances. We are doing this first so that we can "equip" them on our upcoming character instances. We could of course equip them after the fact using the character class <code>setWeapon</code> method, but this is just as well.</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kd">local</span> <span class="n">sword</span> <span class="o">=</span> <span class="n">Melee</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Titan Blade&#39;</span><span class="p">,</span> <span class="s1">&#39;sword&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">axe</span>   <span class="o">=</span> <span class="n">Melee</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Gilded Axe&#39;</span><span class="p">,</span> <span class="s1">&#39;battle axe&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">wand</span>  <span class="o">=</span> <span class="n">Wand</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Enchanted Stick&#39;</span><span class="p">,</span> <span class="s1">&#39;wand&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>Above we are creating two <a href="../../tutorial/weapon/#melee-weapon">Melee</a> class weapons, and one <a href="../../tutorial/weapon/#wand">Wand</a>. The <a href="../../tutorial/weapon/#weapon">Weapon</a> base class takes a <code>name</code>, <code>isType</code>, and <code>attack</code> argument, which we pass for each of the instaces we created.</p>
+<p>We now have three weapon instances that we can "equip" on our characters.</p>
+<h3 id="characters_1">Characters</h3>
+<p>Building the character instances is very much the same as our weapons:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kd">local</span> <span class="n">hero</span>  <span class="o">=</span> <span class="n">Warrior</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Thundar&#39;</span><span class="p">,</span> <span class="s1">&#39;warrior&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">sword</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">boss</span>  <span class="o">=</span> <span class="n">Warrior</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Azarak&#39;</span><span class="p">,</span> <span class="s1">&#39;warrior&#39;</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">axe</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">mage</span>  <span class="o">=</span> <span class="n">Mage</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Chalice&#39;</span><span class="p">,</span> <span class="s1">&#39;mage&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="n">wand</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>Above we have created two warriors, one a hero and the other a boss (baddie). We also have a mage along with us.</p>
+<p>The <a href="../../tutorial/character/#warrior_1">Warrior</a> class needs a <code>name</code>, <code>isType</code>, <code>health</code>, <code>maxHealth</code>, and <code>weapon</code> argument passed to it. The <a href="../../tutorial/character/#mage_1">Mage</a> is a special subclass that also takes a <code>mana</code> and <code>maxMana</code> argument along with the others.</p>
+<p>As you can see, we pass the previously generated weapon instances directly to the character instances.</p>
+<h2 id="output-methods">Output Methods</h2>
+<p>After our charactes and weapons there are a handful of utility methods to help print out the "battle" status as it takes place. These should be fairly self-explanatory.</p>
+<p>There is one method that should be pointed out:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">attackStatus</span><span class="p">(</span><span class="n">attacker</span><span class="p">,</span> <span class="n">attacked</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">weapon</span> <span class="o">=</span> <span class="n">attacker</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">()</span>
+
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s attacks %s with %s for %d HP&quot;</span><span class="p">,</span> 
+  <span class="n">attacker</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">attacked</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+
+  <span class="c1">--Specialized for Mage type</span>
+  <span class="kr">if</span> <span class="n">attacker</span><span class="p">:</span><span class="n">instanceOf</span><span class="p">(</span><span class="n">Mage</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s now has %d MP&quot;</span><span class="p">,</span> 
+    <span class="n">attacker</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+    <span class="n">attacker</span><span class="p">:</span><span class="n">getMana</span><span class="p">())</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>In the method above, we are getting the "attack" status after an <code>attack</code> method has been called in battle. Since a <a href="../../tutorial/character/#mage_1">Mage</a> has an extra <code>mana</code> property, we need to treat it a little differently. We can use the <a href="../../classy/#instanceof"><code>instanceOf</code></a> method to do a type check (in this case for a <a href="../../tutorial/character/#mage_1">Mage</a> type) and then add our logic as needed. In this case printing out the remaining <code>mana</code>.</p>
+<h2 id="battle-methods">Battle Methods</h2>
+<p>The "battle" itself takes place in a couple of rounds. We actually only use two methods through the entire thing, those being <code>attack</code> and <code>heal</code>.</p>
+<p>The majority of the methods are used to print out the results after each method is called.</p>
+<h3 id="attack">attack</h3>
+<p>The default <code>attack</code> method is defined in our base <a href="../../tutorial/character/#character">Character</a> class. It looks like this:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">attack</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="n">character</span><span class="p">:</span><span class="n">hit</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>The method is called like so:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">attacker</span><span class="o">&gt;</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="o">&lt;</span><span class="n">attacked</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>In our "battle" code it ends up like this, depending on whose doing the attacking:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="n">hero</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>The <a href="../../tutorial/character/#mage_1">Mage</a> character class is a little different to facilitate its <code>mana</code> property. The default <code>attack</code> method is overidden, and looks like so in the <a href="../../tutorial/character/#mage_1">Mage</a> class:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="c1">--override parent method</span>
+<span class="kr">function</span> <span class="nc">Mage</span><span class="p">:</span><span class="nf">attack</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">weapon</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">()</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">useMana</span><span class="p">(</span><span class="n">weapon</span><span class="p">:</span><span class="n">getManaCost</span><span class="p">())</span>
+
+  <span class="c1">--Call parent attack method</span>
+  <span class="n">Mage</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">attack</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">character</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>In the overridden method, we want to deplete some of the mages <code>mana</code>, and then we call the <code>Mage.super.attack</code> method, which does the rest of the work of the default <a href="../../tutorial/character/#character">Character</a> <code>attack</code> method.</p>
+<p>The <code>attack</code> method is still used the same in the "battle" code:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="n">mage</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<h3 id="heal">heal</h3>
+<p>The <code>heal</code> method is defined in the base <a href="../../tutorial/character/#character">Character</a> class, and looks like so:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="kr">function</span> <span class="nc">Character</span><span class="p">:</span><span class="nf">heal</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+  <span class="n">amount</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">getHealth</span><span class="p">()</span> <span class="o">+</span> <span class="n">amount</span>
+  <span class="n">self</span><span class="p">:</span><span class="n">setHealth</span><span class="p">(</span><span class="nb">math.min</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">self</span><span class="p">:</span><span class="n">getMaxHealth</span><span class="p">()))</span>
+<span class="kr">end</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<p>We simply call this method in the "battle" on the instance we want to heal, along with the <code>amount</code> to heal with:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+
+<span class="n">mage</span><span class="p">:</span><span class="n">heal</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="p">...</span>
+</pre></div>
+
+
+<h2 id="the-battle-code">The "Battle Code</h2>
+<p>If you'd like to run the full project in Corona, and see the output, <a href="https://s3.amazonaws.com/develephant-plugins/classy/classy-demo.zip">download the demo project</a>. The main "battle" code is shown below:</p>
+<div class="codehilite"><pre><span></span><span class="c1">--#############################################################################</span>
+<span class="c1">--# Classy OOP - Mock Battle Demo</span>
+<span class="c1">--# (c)2018 C. Byerley (develephant)</span>
+<span class="c1">--#############################################################################</span>
+<span class="kd">local</span> <span class="n">sf</span> <span class="o">=</span> <span class="nb">string.format</span>
+<span class="kd">local</span> <span class="n">rep</span> <span class="o">=</span> <span class="nb">string.rep</span>
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Character + Weapon Classes</span>
+<span class="c1">--#############################################################################</span>
+<span class="kd">local</span> <span class="n">Mage</span>    <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Mage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Warrior</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Warrior&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Wand</span>    <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Wand&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Melee</span>   <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;classes.Melee&quot;</span><span class="p">)</span>
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Create Weapon Instances</span>
+<span class="c1">--#############################################################################</span>
+<span class="kd">local</span> <span class="n">sword</span> <span class="o">=</span> <span class="n">Melee</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Titan Blade&#39;</span><span class="p">,</span> <span class="s1">&#39;sword&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">axe</span>   <span class="o">=</span> <span class="n">Melee</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Gilded Axe&#39;</span><span class="p">,</span> <span class="s1">&#39;battle axe&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">wand</span>  <span class="o">=</span> <span class="n">Wand</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Enchanted Stick&#39;</span><span class="p">,</span> <span class="s1">&#39;wand&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Create Character Instances</span>
+<span class="c1">--#############################################################################</span>
+<span class="kd">local</span> <span class="n">hero</span>  <span class="o">=</span> <span class="n">Warrior</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Thundar&#39;</span><span class="p">,</span> <span class="s1">&#39;warrior&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">sword</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">boss</span>  <span class="o">=</span> <span class="n">Warrior</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Azarak&#39;</span><span class="p">,</span> <span class="s1">&#39;warrior&#39;</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">axe</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">mage</span>  <span class="o">=</span> <span class="n">Mage</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Chalice&#39;</span><span class="p">,</span> <span class="s1">&#39;mage&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="n">wand</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Battle Messaging / Utilities</span>
+<span class="c1">--#############################################################################</span>
+<span class="kd">local</span> <span class="n">psf</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="p">...)</span> <span class="nb">print</span><span class="p">(</span><span class="n">sf</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="p">...))</span> <span class="kr">end</span>
+<span class="kd">local</span> <span class="n">pblock</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">rep</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# &quot;</span><span class="o">..</span><span class="n">str</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">rep</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">warriorPresence</span><span class="p">(</span><span class="n">warrior</span><span class="p">)</span>
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;The %s %s has appeared with %d HP&quot;</span><span class="p">,</span> 
+  <span class="n">warrior</span><span class="p">:</span><span class="n">getType</span><span class="p">(),</span> 
+  <span class="n">warrior</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span> 
+  <span class="n">warrior</span><span class="p">:</span><span class="n">getHealth</span><span class="p">())</span>
+
+  <span class="kd">local</span> <span class="n">weapon</span> <span class="o">=</span> <span class="n">warrior</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">()</span>
+
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s welds %s, a %s with %d attack&quot;</span><span class="p">,</span> 
+  <span class="n">warrior</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span> 
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getType</span><span class="p">(),</span> 
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">magePresence</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;The %s %s has appeared with %d HP and %d MP&quot;</span><span class="p">,</span> 
+  <span class="n">mage</span><span class="p">:</span><span class="n">getType</span><span class="p">(),</span> 
+  <span class="n">mage</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span> 
+  <span class="n">mage</span><span class="p">:</span><span class="n">getHealth</span><span class="p">(),</span>
+  <span class="n">mage</span><span class="p">:</span><span class="n">getMana</span><span class="p">())</span>
+
+  <span class="kd">local</span> <span class="n">weapon</span> <span class="o">=</span> <span class="n">mage</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">()</span>
+
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s welds %s, a %s with %d attack&quot;</span><span class="p">,</span> 
+  <span class="n">mage</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span> 
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getType</span><span class="p">(),</span> 
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">attackStatus</span><span class="p">(</span><span class="n">attacker</span><span class="p">,</span> <span class="n">attacked</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">weapon</span> <span class="o">=</span> <span class="n">attacker</span><span class="p">:</span><span class="n">getWeapon</span><span class="p">()</span>
+
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s attacks %s with %s for %d HP&quot;</span><span class="p">,</span> 
+  <span class="n">attacker</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">attacked</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">weapon</span><span class="p">:</span><span class="n">getAttack</span><span class="p">())</span>
+
+  <span class="c1">--Specialized for Mage type</span>
+  <span class="kr">if</span> <span class="n">attacker</span><span class="p">:</span><span class="n">instanceOf</span><span class="p">(</span><span class="n">Mage</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s now has %d MP&quot;</span><span class="p">,</span> 
+    <span class="n">attacker</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+    <span class="n">attacker</span><span class="p">:</span><span class="n">getMana</span><span class="p">())</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">healStatus</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="n">amount</span><span class="p">)</span>
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s heals for %d HP, now has %d HP.&quot;</span><span class="p">,</span> 
+  <span class="n">character</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">amount</span><span class="p">,</span>
+  <span class="n">character</span><span class="p">:</span><span class="n">getHealth</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">isDead</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">character</span><span class="p">:</span><span class="n">isDead</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s has been killed!&quot;</span><span class="p">,</span> <span class="n">character</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">healthStatus</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+  <span class="n">psf</span><span class="p">(</span><span class="s2">&quot;%s now has %d HP&quot;</span><span class="p">,</span> 
+  <span class="n">character</span><span class="p">:</span><span class="n">getName</span><span class="p">(),</span>
+  <span class="n">character</span><span class="p">:</span><span class="n">getHealth</span><span class="p">())</span>
+
+  <span class="n">isDead</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="n">pblock</span><span class="p">(</span><span class="s2">&quot;Classy OOP - Mock Battle Demo&quot;</span><span class="p">)</span>
+
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Battle Start Introductions</span>
+<span class="c1">--#############################################################################</span>
+<span class="n">pblock</span><span class="p">(</span><span class="s2">&quot;Battle Start&quot;</span><span class="p">)</span>
+
+<span class="c1">--# Hero (warrior)</span>
+<span class="n">warriorPresence</span><span class="p">(</span><span class="n">hero</span><span class="p">)</span>
+<span class="c1">--# Mage</span>
+<span class="n">magePresence</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+<span class="c1">--# Boss (warrior)</span>
+<span class="n">warriorPresence</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Attack Round One</span>
+<span class="c1">--#############################################################################</span>
+<span class="n">pblock</span><span class="p">(</span><span class="s2">&quot;Round One&quot;</span><span class="p">)</span>
+
+<span class="c1">--# Mage attacks Boss</span>
+<span class="n">mage</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">mage</span><span class="p">,</span> <span class="n">boss</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="c1">--# Hero attacks Boss</span>
+<span class="n">hero</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">hero</span><span class="p">,</span> <span class="n">boss</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="c1">--# Boss attacks Mage</span>
+<span class="n">boss</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">,</span> <span class="n">mage</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+
+<span class="c1">--# Boss attacks Hero</span>
+<span class="n">boss</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">hero</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">,</span> <span class="n">hero</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">hero</span><span class="p">)</span>
+
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# Attack Round Two</span>
+<span class="c1">--#############################################################################</span>
+<span class="n">pblock</span><span class="p">(</span><span class="s2">&quot;Round Two&quot;</span><span class="p">)</span>
+
+<span class="c1">--# Mage attacks Boss</span>
+<span class="n">mage</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">mage</span><span class="p">,</span> <span class="n">boss</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="c1">--# Heal Mage</span>
+<span class="n">mage</span><span class="p">:</span><span class="n">heal</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">healStatus</span><span class="p">(</span><span class="n">mage</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="c1">--# Hero attacks Boss</span>
+<span class="n">hero</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">hero</span><span class="p">,</span> <span class="n">boss</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">)</span>
+
+<span class="c1">--# Boss attacks Hero</span>
+<span class="n">boss</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">hero</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">,</span> <span class="n">hero</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">hero</span><span class="p">)</span>
+
+<span class="c1">--# Boss attacks Mage</span>
+<span class="n">boss</span><span class="p">:</span><span class="n">attack</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+<span class="n">attackStatus</span><span class="p">(</span><span class="n">boss</span><span class="p">,</span> <span class="n">mage</span><span class="p">)</span>
+<span class="n">healthStatus</span><span class="p">(</span><span class="n">mage</span><span class="p">)</span>
+
+<span class="n">pblock</span><span class="p">(</span><span class="s2">&quot;Battle Done&quot;</span><span class="p">)</span>
+
+<span class="c1">--#############################################################################</span>
+<span class="c1">--# UI</span>
+<span class="c1">--#############################################################################</span>
+<span class="n">display</span><span class="p">.</span><span class="n">newText</span><span class="p">({</span>
+  <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;See console for demo output.&quot;</span><span class="p">,</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="n">display</span><span class="p">.</span><span class="n">contentCenterX</span><span class="p">,</span>
+  <span class="n">y</span> <span class="o">=</span> <span class="n">display</span><span class="p">.</span><span class="n">contentCenterY</span><span class="p">,</span>
+  <span class="n">font</span> <span class="o">=</span> <span class="n">native</span><span class="p">.</span><span class="n">systemFontBold</span>
+<span class="p">})</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../discussion/" title="Discussion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Discussion
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../demo/" title="Demo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Demo
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy;2018 C. Byerley (develephant) | <i class="fas fa-flask fa-sm"></i> v1.0.0
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+      <a href="https://forums.coronalabs.com/forum/654-corona-community-plugins/" class="md-footer-social__link"><i class="far fa-life-ring"></i></a>
+    
+      <a href="https://twitter.com/develephant" class="md-footer-social__link"><i class="fab fa-twitter"></i></a>
+    
+      <a href="https://develephant.com" class="md-footer-social__link"><i class="fas fa-globe"></i></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.62cfdabc.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

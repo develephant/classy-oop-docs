@@ -1,0 +1,1 @@
+__[Click here to download](https://s3.amazonaws.com/develephant-plugins/classy/classy-demo.zip) the full Corona demo project with classes.__

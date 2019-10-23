@@ -1,0 +1,974 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://develephant.github.io/classy-plugin/usage/subclass/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+    
+    
+      
+        <title>Subclasses - Classy OOP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" >
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#discussion" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://develephant.github.io/classy-plugin/" title="Classy OOP" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/rnd-dev.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Classy OOP
+              </span>
+              <span class="md-header-nav__topic">
+                Subclasses
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../img/rnd-dev.png" width="24" height="24">
+      
+    </span>
+    Classy OOP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../classy/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Usage
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Usage
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../class/" title="Classes" class="md-nav__link">
+      Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Subclasses
+      </label>
+    
+    <a href="./" title="Subclasses" class="md-nav__link md-nav__link--active">
+      Subclasses
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" title="Discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conventions" title="Conventions" class="md-nav__link">
+    Conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-creation" title="Subclass Creation" class="md-nav__link">
+    Subclass Creation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-constructor" title="Super Constructor" class="md-nav__link">
+    Super Constructor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subclass-examples" title="Subclass Examples" class="md-nav__link">
+    Subclass Examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-subclass" title="Basic SubClass" class="md-nav__link">
+    Basic SubClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-with-defaults" title="Subclass with Defaults" class="md-nav__link">
+    Subclass with Defaults
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-with-constructor" title="SubClass with Constructor" class="md-nav__link">
+    SubClass with Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-method-override" title="Subclass Method Override" class="md-nav__link">
+    Subclass Method Override
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-method-override-with-super-call" title="Subclass Method Override with Super Call" class="md-nav__link">
+    Subclass Method Override with Super Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclassing-subclasses" title="Subclassing Subclasses" class="md-nav__link">
+    Subclassing Subclasses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../instance/" title="Instances" class="md-nav__link">
+      Instances
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/character/" title="Characters" class="md-nav__link">
+      Characters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/weapon/" title="Weapons" class="md-nav__link">
+      Weapons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/discussion/" title="Discussion" class="md-nav__link">
+      Discussion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/battle/" title="Mock Battle" class="md-nav__link">
+      Mock Battle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../demo/" title="Demo" class="md-nav__link">
+      Demo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" title="Discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conventions" title="Conventions" class="md-nav__link">
+    Conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-creation" title="Subclass Creation" class="md-nav__link">
+    Subclass Creation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-constructor" title="Super Constructor" class="md-nav__link">
+    Super Constructor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subclass-examples" title="Subclass Examples" class="md-nav__link">
+    Subclass Examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-subclass" title="Basic SubClass" class="md-nav__link">
+    Basic SubClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-with-defaults" title="Subclass with Defaults" class="md-nav__link">
+    Subclass with Defaults
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-with-constructor" title="SubClass with Constructor" class="md-nav__link">
+    SubClass with Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-method-override" title="Subclass Method Override" class="md-nav__link">
+    Subclass Method Override
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclass-method-override-with-super-call" title="Subclass Method Override with Super Call" class="md-nav__link">
+    Subclass Method Override with Super Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subclassing-subclasses" title="Subclassing Subclasses" class="md-nav__link">
+    Subclassing Subclasses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Subclasses</h1>
+                
+                <p>Subclasses allow you to "extend" the functionality of another <a href="../../usage/class/">class</a> (or subclass). Once you create a subclass, you gain all the methods and properties of the class you are subclassing and can then build upon it.</p>
+<p>This is a powerful concept in OOP which spares you from rewriting functionality, and instead adding only what you need to an existing class.</p>
+<h2 id="discussion">Discussion</h2>
+<h3 id="conventions">Conventions</h3>
+<p>Generally a subclass name will be represented as a capitalized string identifier. For example "Boss" is a good subclass identifier.</p>
+<h3 id="subclass-creation">Subclass Creation</h3>
+<p>Subclasses are created using the <a href="../../classy/#extends">extends</a> method on the class you want to extend.</p>
+<h3 id="super-constructor">Super Constructor</h3>
+<p>When creating a subclass, we are inheriting functionality from another class. The class being subclassed is the "parent" or "superclass" of the subclass.</p>
+<p>When we need access to the "parent", we use the <strong>super</strong> property of the subclass. This is used most often when a subclass contains a <a href="../../classy/#constructor">constructor</a> function to pass information up the inheritance chain.</p>
+<p>The following example and discussion demonstrates how this works:</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--Person base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--Manager subclass</span>
+<span class="kd">local</span> <span class="n">Manager</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Manager&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Manager</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="c1">--# Pass up the arguments to the parent class</span>
+  <span class="n">Manager</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--Boss subclass</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="c1">--# Pass up the arguments to the parent class</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--instances</span>
+<span class="kd">local</span> <span class="n">manager</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Jenny&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">manager</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Jenny</span>
+
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Jorge&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Jorge</span>
+</pre></div>
+
+
+<p>In the example above, we use a <strong>Person</strong> class to represent a person. We have only defined a <code>name</code> property and <code>getName</code> method, but could add many others. All sublasses of a Person class "type" will have a <code>name</code> associated with them.</p>
+<p>We only want to store the <code>name</code> property once. We also have access to the <code>Person:getName()</code> method, which again, we only want to define once for any subclass of a Person "type".</p>
+<p>Our subclasses represent a <strong>Manager</strong> and <strong>Boss</strong>, which both fit under the Person "type" and so we don't need to recreate the <code>name</code> property or <code>getName</code> method, which lives in the Person base class.</p>
+<p>But, we do need to make sure the Person base class gets the <code>name</code> property, so we call the <code>&lt;Class&gt;.super.constructor</code> function in each of our subclasses <code>constructor</code> functions, which passes the name up. </p>
+<p>Because both the Manager and Boss are subclasses of the Person class, their <code>super</code> property points to the Person base class. You can use the <code>super</code> property to call any methods or manipulate any properties on the "parent" class. This is shown in some examples below.</p>
+<p><span class="far fa-bell"></span> <strong>Pay attention to the signature of the <code>super.constructor</code> function. You need to make sure you pass a reference of <code>self</code> to it, along with any additional arguments, and use only dot (<strong>.</strong>) syntax:</strong></p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">Class</span><span class="o">&gt;</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">[,</span> <span class="n">args</span><span class="p">])</span>
+</pre></div>
+
+
+<h2 id="subclass-examples">Subclass Examples</h2>
+<h3 id="basic-subclass">Basic SubClass</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class (with defaults)</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span> <span class="p">})</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getAge</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">age</span>
+<span class="kr">end</span>
+
+<span class="c1">--subclass</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">)</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getAge</span><span class="p">())</span> <span class="c1">--&gt; 24 (Person default)</span>
+</pre></div>
+
+
+<h3 id="subclass-with-defaults">Subclass with Defaults</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">25</span> <span class="p">})</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getAge</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">age</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--subclass</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Big Cheese&quot;</span> <span class="p">})</span>
+
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">getTitle</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">title</span>
+<span class="kr">end</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getTitle</span><span class="p">())</span> <span class="c1">--&gt; Big Cheese</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Unknown</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getAge</span><span class="p">())</span> <span class="c1">--&gt; 25</span>
+</pre></div>
+
+
+<h3 id="subclass-with-constructor">SubClass with Constructor</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getAge</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">age</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--subclass</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+
+  <span class="n">self</span><span class="p">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">getTitle</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">title</span>
+<span class="kr">end</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Mary&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="s2">&quot;Big Cheese&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Mary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getAge</span><span class="p">())</span> <span class="c1">--&gt; 42</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getTitle</span><span class="p">())</span> <span class="c1">--&gt; Big Cheese</span>
+
+<span class="kd">local</span> <span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Jane</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">:</span><span class="n">getTitle</span><span class="p">())</span> <span class="c1">-- error (method not on Person class)</span>
+</pre></div>
+
+
+<h3 id="subclass-method-override">Subclass Method Override</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--subclass</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--override</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">getName</span><span class="p">()</span>
+  <span class="kr">return</span> <span class="s2">&quot;I&#39;m the boss, &quot;</span><span class="o">..</span><span class="n">self</span><span class="p">.</span><span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Jimmy&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Poppy&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; Jimmy</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boss</span><span class="p">:</span><span class="n">getName</span><span class="p">())</span> <span class="c1">--&gt; I&#39;m the boss, Poppy</span>
+</pre></div>
+
+
+<h3 id="subclass-method-override-with-super-call">Subclass Method Override with Super Call</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">printName</span><span class="p">()</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is &quot;</span><span class="o">..</span><span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--sub class (with defaults)</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;The Main Taco&quot;</span> <span class="p">})</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--override</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">printName</span><span class="p">()</span>
+  <span class="c1">--call base class method</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">printName</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+
+  <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;I am &quot;</span><span class="o">..</span><span class="n">self</span><span class="p">.</span><span class="n">title</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">boss</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Marky&quot;</span><span class="p">)</span>
+<span class="n">boss</span><span class="p">:</span><span class="n">printName</span><span class="p">()</span>
+<span class="c1">-- Outputs</span>
+<span class="c1">--&gt; My name is Marky</span>
+<span class="c1">--&gt; I am The Main Taco</span>
+</pre></div>
+
+
+<h3 id="subclassing-subclasses">Subclassing Subclasses</h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Classy</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;plugin.classy&quot;</span><span class="p">)</span>
+
+<span class="c1">--base class</span>
+<span class="kd">local</span> <span class="n">Person</span> <span class="o">=</span> <span class="n">Classy</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Person&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Person</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="kr">end</span>
+
+<span class="c1">--Boss subclass (with defaults)</span>
+<span class="kd">local</span> <span class="n">Boss</span> <span class="o">=</span> <span class="n">Person</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Boss&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Top Dog&quot;</span> <span class="p">})</span>
+<span class="kr">function</span> <span class="nc">Boss</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">Boss</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--Meal subclass</span>
+<span class="kd">local</span> <span class="n">Meal</span> <span class="o">=</span> <span class="n">Boss</span><span class="p">:</span><span class="n">extends</span><span class="p">(</span><span class="s2">&quot;Meal&quot;</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nc">Meal</span><span class="p">:</span><span class="nf">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">food</span><span class="p">)</span>
+  <span class="n">Meal</span><span class="p">.</span><span class="n">super</span><span class="p">.</span><span class="n">constructor</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+  <span class="n">self</span><span class="p">.</span><span class="n">food</span> <span class="o">=</span> <span class="n">food</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Meal</span><span class="p">:</span><span class="nf">getLunch</span><span class="p">()</span>
+  <span class="kd">local</span> <span class="n">sf</span> <span class="o">=</span> <span class="nb">string.format</span>
+
+  <span class="kd">local</span> <span class="n">name</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span>
+  <span class="kd">local</span> <span class="n">title</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">title</span>
+  <span class="kd">local</span> <span class="n">food</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">food</span>
+
+  <span class="kr">return</span> <span class="n">sf</span><span class="p">(</span><span class="s2">&quot;%s the %s is having a %s for lunch.&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">food</span><span class="p">)</span> 
+<span class="kr">end</span>
+
+<span class="c1">--#########################################################</span>
+<span class="c1">--# Instance Examples</span>
+<span class="kd">local</span> <span class="n">meal1</span> <span class="o">=</span> <span class="n">Meal</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Tony&quot;</span><span class="p">,</span> <span class="s2">&quot;Sandwhich&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">meal1</span><span class="p">:</span><span class="n">getLunch</span><span class="p">())</span>
+<span class="c1">--&gt; Tony the Top Dog is having a Sandwhich for lunch.</span>
+
+<span class="kd">local</span> <span class="n">meal2</span> <span class="o">=</span> <span class="n">Meal</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Tammy&quot;</span><span class="p">,</span> <span class="s2">&quot;Salad&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">meal2</span><span class="p">:</span><span class="n">getLunch</span><span class="p">())</span>
+<span class="c1">--&gt; Tammy the Top Dog is having a Salad for lunch.</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../class/" title="Classes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Classes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../instance/" title="Instances" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Instances
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy;2018 C. Byerley (develephant) | <i class="fas fa-flask fa-sm"></i> v1.0.0
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+      <a href="https://forums.coronalabs.com/forum/654-corona-community-plugins/" class="md-footer-social__link"><i class="far fa-life-ring"></i></a>
+    
+      <a href="https://twitter.com/develephant" class="md-footer-social__link"><i class="fab fa-twitter"></i></a>
+    
+      <a href="https://develephant.com" class="md-footer-social__link"><i class="fas fa-globe"></i></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.62cfdabc.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

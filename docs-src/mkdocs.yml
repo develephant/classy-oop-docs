@@ -1,0 +1,43 @@
+site_name: Classy OOP
+pages:
+  - 'Introduction': 'index.md'
+  - 'Setup': 'setup.md'
+  - 'API': 'classy.md'
+  - 'Usage':
+    - 'Classes': 'usage/class.md'
+    - 'Subclasses': 'usage/subclass.md'
+    - 'Instances': 'usage/instance.md'
+  - 'Tutorial':
+      - 'Overview': 'tutorial/index.md'
+      - 'Characters': 'tutorial/character.md'
+      - 'Weapons': 'tutorial/weapon.md'
+      - 'Discussion': 'tutorial/discussion.md'
+      - 'Mock Battle': 'tutorial/battle.md'
+  - 'Demo': 'demo.md'
+  - 'About': 'about.md'
+copyright: "&copy;2018 C. Byerley (develephant)"
+theme: 
+  name: 'material'
+  favicon: 'img/favicon.ico'
+  palette:
+    primary: 'blue'
+    accent: 'amber'
+  logo: 'img/rnd-dev.png'
+  custom_dir: 'custom_theme'
+  feature:
+    tabs: false
+site_url: https://develephant.github.io/classy-plugin/
+site_dir: ../docs
+extra:
+  social:
+    - type: 'far fa-life-ring'
+      link: 'https://forums.coronalabs.com/forum/654-corona-community-plugins/'
+    - type: 'fab fa-twitter'
+      link: 'https://twitter.com/develephant'
+    - type: 'fas fa-globe'
+      link: 'https://develephant.com'
+  version: 'v1.0.0'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
